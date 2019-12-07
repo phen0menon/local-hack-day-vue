@@ -30,84 +30,77 @@
             <v-text-field label="Type your message here" class="new-post_text">
             </v-text-field></v-row
         ></v-form>
+
         <div class="post">
           <v-row>
-            <v-avatar class="post_photo" size="30"
+            <v-avatar class="post__photo" size="30"
               ><v-img
                 src="https://www.speridian.com/wp-content/uploads/2019/07/studentalign.jpg"
               >
               </v-img>
             </v-avatar>
+            <h3 class="post__author">Good Student</h3>
             <p class="post__text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
               cum cumque culpa doloribus, ipsum dolor sed obcaecati quos,
               aperiam laborum hic, maiores accusantium atque. Minus quos ratione
               illo pariatur incidunt?
             </p>
+            <p class="post__data">07 December 2019</p>
           </v-row>
         </div>
         <div class="post">
           <v-row>
-            <v-avatar class="post_photo" size="30"
+            <v-avatar class="post__photo" size="30"
               ><v-img
                 src="https://www.speridian.com/wp-content/uploads/2019/07/studentalign.jpg"
               >
               </v-img>
             </v-avatar>
+            <h3 class="post__author">Good Student</h3>
             <p class="post__text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
               cum cumque culpa doloribus, ipsum dolor sed obcaecati quos,
               aperiam laborum hic, maiores accusantium atque. Minus quos ratione
               illo pariatur incidunt?
             </p>
+            <p class="post__data">07 December 2019</p>
           </v-row>
         </div>
         <div class="post">
           <v-row>
-            <v-avatar class="post_photo" size="30"
+            <v-avatar class="post__photo" size="30"
               ><v-img
                 src="https://www.speridian.com/wp-content/uploads/2019/07/studentalign.jpg"
               >
               </v-img>
             </v-avatar>
+            <h3 class="post__author">Good Student</h3>
             <p class="post__text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
               cum cumque culpa doloribus, ipsum dolor sed obcaecati quos,
               aperiam laborum hic, maiores accusantium atque. Minus quos ratione
               illo pariatur incidunt?
             </p>
+            <p class="post__data">07 December 2019</p>
           </v-row>
         </div>
         <div class="post">
           <v-row>
-            <v-avatar class="post_photo" size="30"
+            <v-avatar class="post__photo" size="30"
               ><v-img
                 src="https://www.speridian.com/wp-content/uploads/2019/07/studentalign.jpg"
               >
               </v-img>
             </v-avatar>
+            <h3 class="post__author">Good Student</h3>
             <p class="post__text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
               cum cumque culpa doloribus, ipsum dolor sed obcaecati quos,
               aperiam laborum hic, maiores accusantium atque. Minus quos ratione
               illo pariatur incidunt?
             </p>
-          </v-row>
-        </div>
-        <div class="post">
-          <v-row>
-            <v-avatar class="post_photo" size="30"
-              ><v-img
-                src="https://www.speridian.com/wp-content/uploads/2019/07/studentalign.jpg"
-              >
-              </v-img>
-            </v-avatar>
-            <p class="post__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-              cum cumque culpa doloribus, ipsum dolor sed obcaecati quos,
-              aperiam laborum hic, maiores accusantium atque. Minus quos ratione
-              illo pariatur incidunt?
-            </p>
+            <p class="post__data">07 December 2019</p>
           </v-row>
         </div>
       </v-col>
@@ -149,6 +142,15 @@
     height: 30px;
     width: 30px;
     border-radius: 50%;
+  }
+  &__data {
+    font-size: 0.8rem;
+  }
+  &__author {
+    font-weight: 400;
+  }
+  h3 {
+    margin-left: 0.5rem;
   }
 }
 </style>
