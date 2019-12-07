@@ -1,24 +1,179 @@
 <template>
-  <v-img
-    height="100%"
-    src="https://cdn.vuetifyjs.com/images/cards/server-room.jpg"
-  >
-    <v-row align="end" class="fill-height">
-      <v-col align-self="start" class="pa-0" cols="12">
-        <v-avatar class="profile" color="grey" size="164" tile>
-          <v-img
-            src="https://www.speridian.com/wp-content/uploads/2019/07/studentalign.jpg"
-          ></v-img>
-        </v-avatar>
+  <v-container fluid>
+    <v-row>
+      <v-col cols="4">
+        <v-img
+          src="https://www.speridian.com/wp-content/uploads/2019/07/studentalign.jpg"
+          class="profile__photo "
+        ></v-img>
+        <h1 class="profile__name">Good Student</h1>
+        <p class="profile__description_group">27 group student</p>
+
+        <div class="profile__description">
+          <h2>Description</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+            ea, alias eligendi minus quibusdam cupiditate rerum, eos fuga,
+            aspernatur nobis explicabo ratione architecto corrupti? Placeat
+            aspernatur sed fugiat culpa adipisci?
+          </p>
+        </div>
       </v-col>
-      <v-col class="py-0">
-        <v-list-item color="rgba(0, 0, 0, .4)" dark>
-          <v-list-item-content>
-            <v-list-item-title class="title">Good student</v-list-item-title>
-            <v-list-item-subtitle>Good student</v-list-item-subtitle>
-          </v-list-item-content>
-        </v-list-item>
+      <v-col cols="8">
+        <v-form d-flex>
+          <v-row
+            ><v-avatar class="new-post_photo" size="40"
+              ><v-img
+                src="https://www.speridian.com/wp-content/uploads/2019/07/studentalign.jpg"
+              >
+              </v-img>
+            </v-avatar>
+            <v-text-field label="Type your message here" class="new-post_text">
+            </v-text-field></v-row
+        ></v-form>
+
+        <div class="post">
+          <v-row>
+            <v-avatar class="post__photo" size="30"
+              ><v-img
+                src="https://www.speridian.com/wp-content/uploads/2019/07/studentalign.jpg"
+              >
+              </v-img>
+            </v-avatar>
+            <h3 class="post__author">Good Student</h3>
+            <p class="post__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+              cum cumque culpa doloribus, ipasum dolor sed obcaecati quos,
+              aperiam laborum hic, maiores accusantium atque. Minus quos ratione
+              illo pariatur incidunt?
+            </p>
+
+            <v-row class="my-2 small d-flex justify-between post__chip">
+              <v-chip>#coding</v-chip>
+              <div class="post__data">07 Dec 2918</div>
+            </v-row>
+          </v-row>
+        </div>
+        <div class="post">
+          <v-row>
+            <v-avatar class="post__photo" size="30"
+              ><v-img
+                src="https://www.speridian.com/wp-content/uploads/2019/07/studentalign.jpg"
+              >
+              </v-img>
+            </v-avatar>
+            <h3 class="post__author">Good Student</h3>
+            <p class="post__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+              cum cumque culpa doloribus, ipasum dolor sed obcaecati quos,
+              aperiam laborum hic, maiores accusantium atque. Minus quos ratione
+              illo pariatur incidunt?
+            </p>
+
+            <v-row class="my-2 small d-flex justify-between post__chip">
+              <v-chip>#coding</v-chip>
+              <div class="post__data">07 Dec 2918</div>
+            </v-row>
+          </v-row>
+        </div>
+        <div class="post">
+          <v-row>
+            <v-avatar class="post__photo" size="30"
+              ><v-img
+                src="https://www.speridian.com/wp-content/uploads/2019/07/studentalign.jpg"
+              >
+              </v-img>
+            </v-avatar>
+            <h3 class="post__author">Good Student</h3>
+            <p class="post__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+              cum cumque culpa doloribus, ipasum dolor sed obcaecati quos,
+              aperiam laborum hic, maiores accusantium atque. Minus quos ratione
+              illo pariatur incidunt?
+            </p>
+
+            <v-row class="my-2 small d-flex justify-between post__chip">
+              <v-chip>#coding</v-chip>
+              <div class="post__data">07 Dec 2918</div>
+            </v-row>
+          </v-row>
+        </div>
+        <div class="post">
+          <v-row>
+            <v-avatar class="post__photo" size="30"
+              ><v-img
+                src="https://www.speridian.com/wp-content/uploads/2019/07/studentalign.jpg"
+              >
+              </v-img>
+            </v-avatar>
+            <h3 class="post__author">Good Student</h3>
+            <p class="post__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+              cum cumque culpa doloribus, ipasum dolor sed obcaecati quos,
+              aperiam laborum hic, maiores accusantium atque. Minus quos ratione
+              illo pariatur incidunt?
+            </p>
+
+            <v-row class="my-2 small d-flex justify-between post__chip">
+              <v-chip>#coding</v-chip>
+              <div class="post__data">07 Dec 2918</div>
+            </v-row>
+          </v-row>
+        </div>
       </v-col>
     </v-row>
-  </v-img>
+  </v-container>
 </template>
+
+<style lang="scss" scoped>
+.profile {
+  &__photo {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin: auto;
+  }
+  &__name {
+    text-align: center;
+  }
+  &__description {
+    text-align: center;
+    &_group {
+      text-align: center;
+    }
+  }
+}
+
+.new-post {
+  &_photo {
+    height: 40px;
+    width: 40px;
+    margin-right: 1.1rem;
+    border-radius: 60%;
+  }
+}
+.post {
+  margin-left: 1.2rem;
+  margin-top: 0.5rem;
+  &__photo {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+  }
+  &__data {
+    font-size: 0.8rem;
+  }
+  &__author {
+    font-weight: 400;
+  }
+  h3 {
+    margin-left: 0.5rem;
+  }
+  &__chip {
+    margin: 0 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+</style>
