@@ -18,6 +18,15 @@
             aspernatur sed fugiat culpa adipisci?
           </p>
         </div>
+        <div class="profile__icons">
+          <a
+            class="profile__icon"
+            v-for="(sc, index) in socialIcons"
+            :key="index"
+            :href="`https://${sc}`"
+            ><v-icon size="45"> mdi-{{ index }} </v-icon></a
+          >
+        </div>
       </v-col>
       <v-col cols="8">
         <v-form d-flex>
@@ -125,6 +134,21 @@
   </v-container>
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+      socialIcons: {
+        facebook: 'facebook.com',
+        twitter: 'twitter.org',
+        vk: 'vk.com',
+        'github-box': 'github.com'
+      }
+    }
+  }
+}
+</script>
+
 <style lang="scss" scoped>
 .profile {
   &__photo {
@@ -140,6 +164,13 @@
     text-align: center;
     &_group {
       text-align: center;
+    }
+  }
+  &__icons {
+    display: flex;
+    justify-content: space-between;
+    > a {
+      text-decoration: none;
     }
   }
 }
