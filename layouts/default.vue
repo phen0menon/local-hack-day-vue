@@ -67,6 +67,8 @@
 </template>
 
 <script>
+import _ from "lodash"
+
 export default {
   data() {
     return {
@@ -89,6 +91,12 @@ export default {
       right: true,
       rightDrawer: false,
       title: 'Панель LMS'
+    }
+  },
+
+  mounted() {
+    if (!_.isEmpty(this.$store.session_token)) {
+      this.$store.dispatch(Types)
     }
   }
 }
