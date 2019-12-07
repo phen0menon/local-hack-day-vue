@@ -5,11 +5,17 @@
 
       <v-spacer> </v-spacer>
 
-      <v-btn color="primary" class="Task__send_homework"> Send Homework</v-btn>
+      <v-btn color="light" class="Task__send_homework"> File input</v-btn>
+
+      <v-btn color="primary" class="Task__send_homework ml-2">
+        Send Homework</v-btn
+      >
     </v-row>
+
     <div class="mx-1">
       Deadline: 17 Jan 19:00
     </div>
+
     <v-card class="Task__homework_text mx-0">
       <v-card-text>
         Risus nec feugiat in fermentum posuere urna. Sapien nec sagittis aliquam
