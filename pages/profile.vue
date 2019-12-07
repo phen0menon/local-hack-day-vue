@@ -8,6 +8,7 @@
         ></v-img>
         <h1 class="profile__name">Good Student</h1>
         <p class="profile__description_group">27 group student</p>
+
         <div class="profile__description">
           <h2>Description</h2>
           <p>
@@ -42,11 +43,15 @@
             <h3 class="post__author">Good Student</h3>
             <p class="post__text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-              cum cumque culpa doloribus, ipsum dolor sed obcaecati quos,
+              cum cumque culpa doloribus, ipasum dolor sed obcaecati quos,
               aperiam laborum hic, maiores accusantium atque. Minus quos ratione
               illo pariatur incidunt?
             </p>
-            <p class="post__data">07 December 2019</p>
+
+            <v-row class="my-2 small d-flex justify-between post__chip">
+              <v-chip>#coding</v-chip>
+              <div class="post__data">07 Dec 2918</div>
+            </v-row>
           </v-row>
         </div>
         <div class="post">
@@ -60,11 +65,15 @@
             <h3 class="post__author">Good Student</h3>
             <p class="post__text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-              cum cumque culpa doloribus, ipsum dolor sed obcaecati quos,
+              cum cumque culpa doloribus, ipasum dolor sed obcaecati quos,
               aperiam laborum hic, maiores accusantium atque. Minus quos ratione
               illo pariatur incidunt?
             </p>
-            <p class="post__data">07 December 2019</p>
+
+            <v-row class="my-2 small d-flex justify-between post__chip">
+              <v-chip>#coding</v-chip>
+              <div class="post__data">07 Dec 2918</div>
+            </v-row>
           </v-row>
         </div>
         <div class="post">
@@ -78,11 +87,15 @@
             <h3 class="post__author">Good Student</h3>
             <p class="post__text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-              cum cumque culpa doloribus, ipsum dolor sed obcaecati quos,
+              cum cumque culpa doloribus, ipasum dolor sed obcaecati quos,
               aperiam laborum hic, maiores accusantium atque. Minus quos ratione
               illo pariatur incidunt?
             </p>
-            <p class="post__data">07 December 2019</p>
+
+            <v-row class="my-2 small d-flex justify-between post__chip">
+              <v-chip>#coding</v-chip>
+              <div class="post__data">07 Dec 2918</div>
+            </v-row>
           </v-row>
         </div>
         <div class="post">
@@ -96,11 +109,15 @@
             <h3 class="post__author">Good Student</h3>
             <p class="post__text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-              cum cumque culpa doloribus, ipsum dolor sed obcaecati quos,
+              cum cumque culpa doloribus, ipasum dolor sed obcaecati quos,
               aperiam laborum hic, maiores accusantium atque. Minus quos ratione
               illo pariatur incidunt?
             </p>
-            <p class="post__data">07 December 2019</p>
+
+            <v-row class="my-2 small d-flex justify-between post__chip">
+              <v-chip>#coding</v-chip>
+              <div class="post__data">07 Dec 2918</div>
+            </v-row>
           </v-row>
         </div>
       </v-col>
@@ -151,6 +168,12 @@
   }
   h3 {
     margin-left: 0.5rem;
+  }
+  &__chip {
+    margin: 0 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 </style>
