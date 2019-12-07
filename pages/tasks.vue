@@ -1,10 +1,10 @@
 <template>
-  <v-data-table :headers="headers" :items="desserts" class="elevation-1">
+  <v-data-table :headers="headers" :items="desserts" class="elevation-1 mt-4">
     <template v-slot:item.points="{ item }">
       <v-chip :color="getColor(item.points)" dark>{{ item.points }}</v-chip>
     </template>
     <template v-slot:item.desc="{ item }">
-      <p>{{ item.desc }}</p>
+      <p>{{ item.desc.substr(0, 80) }}</p>
     </template>
   </v-data-table>
 </template>
