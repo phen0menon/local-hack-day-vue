@@ -8,6 +8,15 @@
         ></v-img>
         <h1 class="profile__name">Good Student</h1>
         <p class="profile__description_group">27 group student</p>
+        <div class="profile__description">
+          <h2>Description</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+            ea, alias eligendi minus quibusdam cupiditate rerum, eos fuga,
+            aspernatur nobis explicabo ratione architecto corrupti? Placeat
+            aspernatur sed fugiat culpa adipisci?
+          </p>
+        </div>
       </v-col>
       <v-col cols="8">
         <v-form d-flex>
@@ -21,6 +30,86 @@
             <v-text-field label="Type your message here" class="new-post_text">
             </v-text-field></v-row
         ></v-form>
+        <div class="post">
+          <v-row>
+            <v-avatar class="post_photo" size="30"
+              ><v-img
+                src="https://www.speridian.com/wp-content/uploads/2019/07/studentalign.jpg"
+              >
+              </v-img>
+            </v-avatar>
+            <p class="post__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+              cum cumque culpa doloribus, ipsum dolor sed obcaecati quos,
+              aperiam laborum hic, maiores accusantium atque. Minus quos ratione
+              illo pariatur incidunt?
+            </p>
+          </v-row>
+        </div>
+        <div class="post">
+          <v-row>
+            <v-avatar class="post_photo" size="30"
+              ><v-img
+                src="https://www.speridian.com/wp-content/uploads/2019/07/studentalign.jpg"
+              >
+              </v-img>
+            </v-avatar>
+            <p class="post__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+              cum cumque culpa doloribus, ipsum dolor sed obcaecati quos,
+              aperiam laborum hic, maiores accusantium atque. Minus quos ratione
+              illo pariatur incidunt?
+            </p>
+          </v-row>
+        </div>
+        <div class="post">
+          <v-row>
+            <v-avatar class="post_photo" size="30"
+              ><v-img
+                src="https://www.speridian.com/wp-content/uploads/2019/07/studentalign.jpg"
+              >
+              </v-img>
+            </v-avatar>
+            <p class="post__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+              cum cumque culpa doloribus, ipsum dolor sed obcaecati quos,
+              aperiam laborum hic, maiores accusantium atque. Minus quos ratione
+              illo pariatur incidunt?
+            </p>
+          </v-row>
+        </div>
+        <div class="post">
+          <v-row>
+            <v-avatar class="post_photo" size="30"
+              ><v-img
+                src="https://www.speridian.com/wp-content/uploads/2019/07/studentalign.jpg"
+              >
+              </v-img>
+            </v-avatar>
+            <p class="post__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+              cum cumque culpa doloribus, ipsum dolor sed obcaecati quos,
+              aperiam laborum hic, maiores accusantium atque. Minus quos ratione
+              illo pariatur incidunt?
+            </p>
+          </v-row>
+        </div>
+        <div class="post">
+          <v-row>
+            <v-avatar class="post_photo" size="30"
+              ><v-img
+                src="https://www.speridian.com/wp-content/uploads/2019/07/studentalign.jpg"
+              >
+              </v-img>
+            </v-avatar>
+            <p class="post__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+              cum cumque culpa doloribus, ipsum dolor sed obcaecati quos,
+              aperiam laborum hic, maiores accusantium atque. Minus quos ratione
+              illo pariatur incidunt?
+            </p>
+          </v-row>
+        </div>
       </v-col>
     </v-row>
   </v-container>
@@ -32,6 +121,16 @@
     height: 250px;
     width: 250px;
     border-radius: 50%;
+    margin: auto;
+  }
+  &__name {
+    text-align: center;
+  }
+  &__description {
+    text-align: center;
+    &_group {
+      text-align: center;
+    }
   }
 }
 
@@ -41,6 +140,15 @@
     width: 40px;
     margin-right: 1.1rem;
     border-radius: 60%;
+  }
+}
+.post {
+  margin-left: 1.2rem;
+  margin-top: 0.5rem;
+  &__photo {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
   }
 }
 </style>
