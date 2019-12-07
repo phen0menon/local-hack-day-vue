@@ -31,9 +31,6 @@
       <v-btn @click.stop="miniVariant = !miniVariant" icon>
         <v-icon>mdi-{{ `chevron-${miniVariant ? 'right' : 'left'}` }}</v-icon>
       </v-btn>
-      <v-btn @click.stop="clipped = !clipped" icon>
-        <v-icon>mdi-application</v-icon>
-      </v-btn>
       <v-btn @click.stop="fixed = !fixed" icon>
         <v-icon>mdi-minus</v-icon>
       </v-btn>
@@ -56,7 +53,7 @@
               mdi-repeat
             </v-icon>
           </v-list-item-action>
-          <v-list-item-title>Switch drawer (click me)</v-list-item-title>
+          <v-list-item-title>Перевести на темную тему</v-list-item-title>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
@@ -72,8 +69,8 @@ import _ from "lodash"
 export default {
   data() {
     return {
-      clipped: false,
-      drawer: false,
+      clipped: true,
+      drawer: true,
       fixed: false,
       items: [
         {
